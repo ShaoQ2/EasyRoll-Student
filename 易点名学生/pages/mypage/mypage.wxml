@@ -1,0 +1,8 @@
+<!--pages/mypage/mypage.wxml-->
+<view>
+  <view class="divLineX"></view>
+  <view class="td">意见反馈/帮助</view>
+  <view class="divLineX"></view>
+  <view class="td">设置</view>
+  <view class="divLineX"></view>
+</view>
