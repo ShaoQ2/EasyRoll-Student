@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/message/message",
+    "pages/mypage/mypage",
+    "pages/sign/sign",
+    "pages/leave/leave",
+    "pages/feedback/feedback"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "易点名",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#c6e6f5",    
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "课程",
+        "iconPath": "./images/课程.png",
+        "selectedIconPath":"./images/课程active.png"
+      },     
+      {
+        "pagePath": "pages/leave/leave",
+        "text": "请假",
+        "iconPath": "./images/请假.png",
+        "selectedIconPath":"./images/请假active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "./images/消息.png",
+        "selectedIconPath": "./images/消息active.png"
+      },
+      {
+        "pagePath":  "pages/mypage/mypage",
+        "text": "我的",
+        "iconPath": "./images/我的.png",
+        "selectedIconPath": "./images/我的active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

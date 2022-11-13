@@ -1,0 +1,59 @@
+<!--pages/leave/leave.wxml-->
+<view class="divLineX"></view>
+<view class="top">
+  <view class="detail">请假详情</view>
+  <view class="columnLine"></view>
+  <view class="state">审核状态</view>
+</view>
+<view class="divLineX"></view>
+<!--记录-->
+<!--审核通过-->
+<view class="record">
+  <view class="details">
+    <view class="startTime">起始时间：2022年11月11日08时20分</view>
+    <view class="endTime">结束时间：2022年11月11日10时00分</view>
+  </view>
+  <view class="columnLine"></view>
+  <view class="states1">审核通过</view>
+</view>
+<view class="divLineX"></view>
+<!--审核中-->
+<view class="record">
+  <view class="details">
+    <view class="startTime">起始时间：2022年11月11日10时00分</view>
+    <view class="endTime">结束时间：2022年11月11日12时00分</view>
+  </view>
+  <view class="columnLine"></view>
+  <view class="states2">审核中</view>
+</view>
+<view class="divLineX"></view>
+<!--审核未通过-->
+<view class="record">
+  <view class="details">
+    <view class="startTime">起始时间：2022年11月12日8时20分</view>
+    <view class="endTime">结束时间：2022年11月12日10时00分</view>
+  </view>
+  <view class="columnLine"></view>
+  <view class="states3">审核未通过</view>
+</view>
+<view class="divLineX"></view>
+<!--请假申请-->
+<!--index.wxml-->
+<view class="addBt">
+  <button class="applicate" plain="true" bindtap="applicate">
+      <image class="add" src='/images/添加.png'></image>
+  </button>
+</view>
+<!--请假申请页面-->
+<view class="father">
+  <view class="leaveWindows"  wx:if="{{showAddLeave}}">
+      <view class="addLeave">新建请假申请</view>
+      <view class="start">起始时间</view>
+      <view class="end">结束时间</view>
+      <view class="excuse">请假理由</view>
+      <view class="evidence">请假凭证</view>
+      <!--按钮-->
+      <view class="click">
+      </view>
+  </view>
+</view>
