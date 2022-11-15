@@ -1,2 +1,15 @@
 <!--pages/sign/sign.wxml-->
-
+<view class="father">
+  <view class="container1">
+    <view class="lesson">软件工程A</view>
+    <view class="lessonMeg">旗山东3-307</view>
+    <view class="lessonMeg">柯逍</view>
+  </view>
+</view>
+<view class="container2">
+  <view class="signBt" bindtap="sign">签到
+  </view>
+</view>
+<view>
+  <button class="backBt" bindtap="back">返回</button>
+</view>

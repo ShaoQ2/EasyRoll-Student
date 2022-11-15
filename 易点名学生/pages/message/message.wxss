@@ -1,1 +1,87 @@
 /* pages/message/message.wxss */
+.container1{
+  background:#c6e6f5;
+  display: flex;/*弹性布局*/
+  flex-direction: row;
+  width: 100%;
+  height: 40px;
+}
+.msg{
+  text-align: center;/*文字水平居中*/
+  line-height: 40px;/*文字垂直居中*/
+  font-size: 12px;
+  width: 70%;
+}
+.publisher{
+  text-align: center;/*文字水平居中*/
+  line-height: 40px;/*文字垂直居中*/
+  font-size: 12px;
+  width: 30%;
+}
+/*
+.divLineX{
+  background: #E4E6ED;
+  width: 100%;
+  height: 2px;
+}*/
+
+.container2{
+  display: flex;/*弹性布局*/
+  flex-direction: row;
+  width: 100%;
+  height: 80px;
+  background-color: rgba( 255, 0, 0, 0.5 );
+}
+.lesson1{
+  text-align: center;/*文字水平居中*/
+  line-height: 70px;/*文字垂直居中*/
+  font-size: 12px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.time{
+  margin-bottom:-55px;
+}
+.message1{
+  font-size: 12px;
+  text-align: center;
+  line-height: 70px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.person{
+  margin-bottom:-55px;
+}
+
+/*请假审核*/
+.lesson{
+  text-align: center;/*文字水平居中*/
+  line-height: 70px;/*文字垂直居中*/
+  font-size: 12px;
+  width: 70%;
+}
+
+.columnLine{
+  background: #E4E6ED;
+  width: 3px;
+}
+.message{
+  font-size: 12px;
+  text-align: center;
+  line-height: 70px;
+  width: 30%;
+}
+.lessonLine{
+  background: #E4E6ED;
+  width: 100%;
+  height: 5rpx
+}
+.container3{
+  display: flex;/*弹性布局*/
+  flex-direction: row;
+  width: 100%;
+  height: 80px;
+}

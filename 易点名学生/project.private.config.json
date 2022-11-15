@@ -3,5 +3,18 @@
   "projectname": "%E6%98%93%E7%82%B9%E5%90%8D%E5%AD%A6%E7%94%9F",
   "setting": {
     "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "",
+          "pathName": "pages/index/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
   }
 }

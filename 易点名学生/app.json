@@ -5,7 +5,9 @@
     "pages/message/message",
     "pages/mypage/mypage",
     "pages/sign/sign",
-    "pages/leave/leave"
+    "pages/leave/leave",
+    "pages/feedback/feedback",
+    "pages/date/date"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -22,6 +24,12 @@
         "text": "课程",
         "iconPath": "./images/课程.png",
         "selectedIconPath":"./images/课程active.png"
+      },     
+      {
+        "pagePath": "pages/leave/leave",
+        "text": "请假",
+        "iconPath": "./images/请假.png",
+        "selectedIconPath":"./images/请假active.png"
       },
       {
         "pagePath": "pages/message/message",

@@ -84,7 +84,7 @@
   margin-top: 10px;
   margin-bottom: 5px;
 }
-/*课程名字的样式*/
+/*课程名字*/
 .lesson{
   width: 100%;
   justify-content: center;
@@ -102,23 +102,4 @@
   background-color: white;
   border: 2px solid #E4E6ED;
   font-size: 12px;
-}
-/*请假窗口*/
-.father1{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;/*使得father中的windows水平居中*/
-}
-.windows1{
-  display: flex;
-  flex-direction: column;/*表示该容器的子元素flex-item从上到下排列*/
-  width: 250px;
-  height: 430px;
-  border:  2px solid #E4E6ED; 
-  border-radius: 10px;
-  background-color: white;
-  position: absolute;
-  top: 60px;
-  z-index: 800;
 }

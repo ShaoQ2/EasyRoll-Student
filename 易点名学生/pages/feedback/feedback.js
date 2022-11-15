@@ -1,4 +1,4 @@
-// pages/sign/sign.js
+// pages/feedback/feedback.js
 Page({
 
   /**
@@ -11,14 +11,6 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  back(){
-    wx.switchTab({
-      url: '/pages/index/index',//返回tabbar页面不能用wx.navigateTo()
-    })
-  },
-  sign(){
-
-  },
   onLoad(options) {
 
   },
