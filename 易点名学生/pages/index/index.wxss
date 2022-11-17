@@ -15,11 +15,14 @@
 .container1{
   background:#c6e6f5;
 }
-
-.contain2{
+/*课程1*/
+.container2{
   border: 2px solid #E4E6ED;
-  border-radius: 2px;
+  border-radius: 15px;
+  height: 110px;
+  margin:20px
 }
+
 .myButton{
   border: 2px solid #E4E6ED; 
   border-radius: 0px;  
@@ -28,9 +31,11 @@
   font-size: 12px;
   margin-bottom: 10px;
 }
+/*
 .myButton::after{
   border: none; 
 }
+*/
 .room{ 
 /*  width: 50% !important;
   float:left;*/
