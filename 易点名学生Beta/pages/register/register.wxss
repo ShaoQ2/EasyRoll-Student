@@ -1,0 +1,121 @@
+/* pages/register/register.wxss */
+.cell{
+	margin-top: 30rpx;
+}
+
+.title{
+	display: flex;
+	height: 100rpx;
+	justify-content: center;
+	align-items: center;
+	font-size: 50rpx;
+}
+
+.info-container{
+	margin-top: 60rpx;
+}
+
+.btn-container{
+	display: flex;
+	justify-content: center;
+}
+
+.btn1{
+	margin-top: 70rpx;
+	width: 200px;
+}
+
+.btn2{
+	margin-top: 20rpx;
+	width: 200px;
+}
+
+.label{
+	font-size: large;
+	height: 30px;/*调整标签高度大小*/
+}
+
+.namelist{
+	display: flex;
+	margin-left:320rpx;
+}
+/*---------------------------*/
+.td {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.divLineX{
+  background: #E4E6ED;
+  width: 100%;
+  height: 5rpx;
+}
+.container1{
+  background:#c6e6f5;
+  margin-bottom: 10px;
+}
+.student-icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  border: 2px solid #E4E6ED;
+  margin: 5px;
+  border-radius: 30px;
+  background-color: #c6e6f5;
+  padding: 5px;
+}
+.image{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -40px;
+}
+/*文字样式*/
+.title {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 70%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;  
+}
+/*学号姓名*/
+.stu{
+  margin-left: 50px;
+  margin-top: 30px;
+  display:flex;
+  align-items: center;
+  flex-direction: row;
+}
+/*输入框*/
+.toast-input{
+  margin-left: 40px;
+  border: 2px solid #E4E6ED;
+  width: 55%;
+}
+.bt{
+  margin-top: 45px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button{
+  font-size: 15px;
+  width:100px;
+  background:  #c6e6f5;
+  border:  2px solid #E4E6ED;
+}
+button::after{
+  border: none;
+}

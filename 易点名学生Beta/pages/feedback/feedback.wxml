@@ -1,0 +1,13 @@
+<!--pages/feedback/feedback.wxml-->
+<!--pages/feedback/feedback.wxml-->
+<view class="page">
+<view class='style3'>
+  <text >易点名</text>  
+</view>
+  <view class='style1'> 
+    <textarea   placeholder="你要反馈的问题... "  maxlength='300' bindinput='limit' value="{{suggestText}}"      style="height: 12.3em"/> 
+  </view>
+  <view class='style2'>
+    <button class="bt"  bindtap='feedSend'>提交</button>
+  </view>
+</view>

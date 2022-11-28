@@ -1,0 +1,33 @@
+<!--pages/message/message.wxml-->
+<view class="lessonLine"></view>
+<view class="container1">
+  <view class="msg">消息内容</view>
+  <view class="columnLine"></view>
+  <view class="publisher">发布者</view>
+</view>
+<view class="lessonLine"></view>
+<view class="container2">
+  <view class="lesson1">
+    <view class="time">你在2022-11-11日上午1-2节</view>
+    <view class="lessonName">【软件工程】考勤中被记为缺课了！</view>
+  </view>
+  <view class="columnLine"></view>
+  <view class="message1">
+  <view class="person">督导队员</view>
+  <view class="Name">陈龙龙</view>
+  </view>
+</view>
+
+<view class="lessonLine"></view>
+<view class="container3">
+  <view class="lesson">你的请假已通过审核</view>
+  <view class="columnLine"></view>
+  <view class="message">系统</view>
+</view>
+<view class="lessonLine"></view>
+<view class="container3">
+  <view class="lesson">你的请假未通过审核</view>
+  <view class="columnLine"></view>
+  <view class="message">系统</view>
+</view>
+<view class="lessonLine"></view>

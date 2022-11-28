@@ -1,0 +1,89 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/message/message",
+    "pages/mypage/mypage",
+    "pages/sign/sign",
+    "pages/leave/leave",
+    "pages/feedback/feedback",
+    "pages/date/date",
+    "pages/register/register",
+    "pages/register/department/department",
+    "pages/register/major/major",
+    "pages/mypage/help/help",
+    "pages/mypage/personal_info/personal_info",
+    "pages/mypage/settings/settings"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "易点名",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#c6e6f5",    
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "课程",
+        "iconPath": "./images/课程.png",
+        "selectedIconPath":"./images/课程active.png"
+      },     
+      {
+        "pagePath": "pages/leave/leave",
+        "text": "请假",
+        "iconPath": "./images/请假.png",
+        "selectedIconPath":"./images/请假active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "./images/消息.png",
+        "selectedIconPath": "./images/消息active.png"
+      },
+      {
+        "pagePath":  "pages/mypage/mypage",
+        "text": "我的",
+        "iconPath": "./images/我的.png",
+        "selectedIconPath": "./images/我的active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-slider": "@vant/weapp/slider/index",
+    "van-swipe-cell": "@vant/weapp/swipe-cell/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-calendar": "@vant/weapp/calendar/index",
+    "van-collapse": "@vant/weapp/collapse/index",
+    "van-collapse-item": "@vant/weapp/collapse-item/index",
+    "van-count-down": "@vant/weapp/count-down/index",
+    "van-nav-bar": "@vant/weapp/nav-bar/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "van-notice-bar": "@vant/weapp/notice-bar/index",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-notify": "@vant/weapp/notify/index",
+    "van-transition": "@vant/weapp/transition/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-radio": "@vant/weapp/radio/index",
+    "van-radio-group": "@vant/weapp/radio-group/index"
+  }
+}

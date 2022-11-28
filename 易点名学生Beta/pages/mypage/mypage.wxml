@@ -1,0 +1,122 @@
+<!--pages/register/register.wxml-->
+<!--还未登录时-->
+<view wx:if="{{hu=='hh'}}">
+<view class="container">
+  <view class="profile-photo" bindtap="register">头像</view>
+  <text style="font-size: 15px;font-weight: 600;">点击头像登录/注册</text>
+</view>
+<!--我的历史签到-->
+<view class="option">
+<view class='item' bindtap='myInfomation'> 
+  <image src="/images/history.png" style="height: 40px" mode="heightFix"></image>
+  <view class="title">我的历史签到</view>
+  <view class="detail2"> 
+    <text>></text> 
+  </view>
+</view>
+<!--意见反馈-->
+<view class='item' bindtap='feedback'>
+  <image src="/images/feedback.png" style="height: 40px" mode="heightFix"></image>
+  <view class="title" >意见反馈/帮助</view>
+  <view class="detail2">
+    <text>></text>
+  </view>
+</view>
+<!--设置-->
+<view class="item" bindtap='aboutme'>
+  <image src="/images/set.png" style="height: 40px" mode="heightFix" class="icon"></image>
+  <view class="title">设置</view>
+  <view class="detail2">
+    <text> ></text>
+  </view>
+</view>
+</view>
+</view>
+
+<!--登录成功后-->
+<view wx:else="{{hu=='1'}}">
+  <!-- 头像 -->
+  <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+    <image mode="aspectFill" class="avatar" src="{{avatarUrl}}"></image>
+  </button> 
+  <!-- 昵称 -->
+  <van-cell-group>
+    <van-cell
+    title="昵称"
+    clickable
+    url="/pages/mypage/personal_info/personal_info"
+    value="{{nickname}}"
+    value-class="value"
+    >
+    </van-cell>
+  </van-cell-group>
+  <!-- 姓名 -->
+  <van-cell-group>
+    <van-cell
+    title="姓名"
+    value="{{name}}"
+    value-class="value"
+    >
+    </van-cell>
+  </van-cell-group>
+  <!-- 职工号/学号 -->
+  <van-cell-group>
+    <van-cell wx:if="{{role>=2}}"
+    title="职工号"
+    value="{{id}}"
+    value-class="value"
+    >
+    </van-cell>
+    <van-cell wx:else="{{role==1}}"
+    title="学号"
+    value="{{id}}"
+    value-class="value"
+    >
+    </van-cell>
+  </van-cell-group>
+  <!-- 学院 -->
+  <van-cell-group>
+    <van-cell
+    title="学院"
+    center
+    value="{{departmentName}}"
+    value-class="value"
+    label-class="label"
+    >
+    </van-cell>
+  </van-cell-group>
+  <!-- 当前周数 -->
+  <van-cell-group>
+    <van-cell
+    title="当前周数"
+    value="{{currentWeek}}"
+    value-class="value"
+    >
+    </van-cell>
+  </van-cell-group>
+  <!-- 主页相关功能 -->
+  <view class="function">
+    <!-- 意见反馈/帮助 -->
+    <van-cell-group>
+      <van-cell
+      title="意见反馈/帮助"
+      is-link
+      url="/pages/mypage/help/help"
+      />
+    </van-cell-group>
+    <!-- 设置 -->
+    <van-cell-group>
+      <van-cell
+      title="设置"
+      is-link
+      url="/pages/mypage/settings/settings"
+      />
+    </van-cell-group>
+  </view>
+</view>
+
+
+<!-- 轻提示弹窗 -->
+<van-toast id="van-toast" />
+<!-- 对话框弹窗 -->
+<van-dialog custom-class="dialog" id="van-dialog" />

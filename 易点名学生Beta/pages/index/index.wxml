@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<!--顶部我的课程-->
+<view class="container1">
+  <view class="divLineX"></view>
+  <view class="td">我的课程</view>
+  <view class="divLineX"></view>
+</view> 
+
+<view class="container2">
+  <button class="myButton" style="width: 80vw;" bindtap="choose">软件工程A</button>
+  <button class="room" style="width:40vw">旗山东3-307</button>
+  <button class="time" style="width:40vw">1-2节</button>
+</view>
+<view class="container2">
+  <button class="myButton" style="width: 80vw;" bindtap="choose1">计算机操作系统</button>
+  <button class="room" style="width:40vw">旗山东3-406</button>
+  <button class="time" style="width:40vw">3-4节</button>
+</view>
+<!--利用wx:if自定义弹窗1-->
+<view class="father">
+  <view class="windows"  wx:if="{{show}}">
+      <view class="lesson">软件工程A</view>
+      <view class="lessonMeg">教室：旗山东3-307</view>
+      <view class="lessonMeg">教师：柯逍</view>
+      <view class="lessonMeg">节数：1-2节</view>
+      <view class="lessonMeg">周数：2-14周</view>
+      <view class="click">
+        <button class="bt" bindtap="sign">签到</button>
+        <button class="bt" bindtap="back">返回</button>
+      </view>
+  </view>
+</view>
+<view class="father">
+  <view class="windows"  wx:if="{{show1}}">
+      <view class="lesson">计算机操作系统</view>
+      <view class="lessonMeg">教室：旗山东3-406</view>
+      <view class="lessonMeg">教师：陈勃</view>
+      <view class="lessonMeg">节数：3-4节</view>
+      <view class="lessonMeg">周数：1-9周</view>
+      <view class="click">
+        <button class="bt" bindtap="sign">签到</button>
+        <button class="bt" bindtap="back">返回</button>
+      </view>
+  </view>
+</view>
