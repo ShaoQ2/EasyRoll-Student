@@ -1,0 +1,99 @@
+<!--pages/leave/leave.wxml-->
+<view class="divLineX"></view>
+<view class="top">
+  <view class="detail">请假详情</view>
+  <view class="columnLine"></view>
+  <view class="state">审核状态</view>
+</view>
+<view class="divLineX"></view>
+<!--记录-->
+<!--审核通过-->
+<view class="record">
+  <view class="details">
+    <view class="startTime">起始时间：2022年11月11日08时20分</view>
+    <view class="endTime">结束时间：2022年11月11日10时00分</view>
+  </view>
+  <view class="columnLine"></view>
+  <view class="states1">审核通过</view>
+</view>
+<view class="divLineX"></view>
+<!--审核中-->
+<view class="record">
+  <view class="details">
+    <view class="startTime">起始时间：2022年11月11日10时00分</view>
+    <view class="endTime">结束时间：2022年11月11日12时00分</view>
+  </view>
+  <view class="columnLine"></view>
+  <view class="states2">审核中</view>
+</view>
+<view class="divLineX"></view>
+<!--审核未通过-->
+<view class="record">
+  <view class="details">
+    <view class="startTime">起始时间：2022年11月12日8时20分</view>
+    <view class="endTime">结束时间：2022年11月12日10时00分</view>
+  </view>
+  <view class="columnLine"></view>
+  <view class="states3">审核未通过</view>
+</view>
+<view class="divLineX"></view>
+<!--请假申请-->
+<!--index.wxml-->
+<view class="addBt">
+  <button class="applicate" plain="true" bindtap="applicate">
+      <image class="add" src='/images/add.png'></image>
+  </button>
+</view>
+<!--请假申请页面-->
+<view class="father">
+  <view class="leaveWindows"  wx:if="{{showAddLeave}}">
+      <view class="addLeave">新建请假申请</view>  
+      <view class="tui-picker-content">
+        <picker mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}">
+          <view class="tui-picker-detail">
+            <view class="startDate">起始时间</view> <view class="date">{{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}</view>
+          </view>
+        </picker>
+      </view>
+      <view class="tui-picker-content">
+        <picker mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}">
+          <view class="tui-picker-detail">
+            <view class="endDate">结束时间</view>
+            <view class="date">{{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}</view>
+          </view>
+        </picker>
+      </view>
+      <view class="excuse">
+        <view>请假理由</view>
+        <view class='toast-input'>
+                    <input placeholder='请填写理由' bindinput='setValue' data-name='stuEidtName'></input>
+        </view>
+      </view>
+      <view class="evidence">
+        <view class="leaveEvidence">请假凭证</view>
+        <view>
+          <button class="clickLoad">点击上传</button>
+        </view>
+      </view>
+      <!--按钮-->
+      <view class="click">
+        <view class="confirm">
+          <button class="bt" bindtap="confirm">确定</button>
+        </view>
+        <view class="cancel">
+          <button class="bt" bindtap="cancel">取消</button>
+        </view>
+      </view>
+  </view>
+</view>
+
+       
+<!--
+        <view class="tui-picker-content">
+        <picker mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}">
+          <view class="tui-picker-detail">
+            结束时间 {{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}
+          </view>
+        </picker>
+      </view>
+-->

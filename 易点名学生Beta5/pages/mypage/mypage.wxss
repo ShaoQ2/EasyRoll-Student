@@ -1,0 +1,132 @@
+/* pages/register/register.wxss */
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 300rpx;
+  height: 300rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.img-view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img{
+  display: flex;
+  margin-top: 100rpx;
+  margin-left: 10rpx;
+  justify-content: center;
+  align-items: center;
+  width: 400rpx;
+  height: 400rpx;
+}
+
+.btn-container{
+	display: flex;
+	justify-content: center;
+}
+
+.btn1{
+	margin-top: 350rpx;
+	width: 200px;
+}
+
+.function{
+  margin-top: 0rpx;
+}
+
+/* 头像 */
+.avatar-wrapper {
+  padding: 0;
+  width: 100px !important;
+  height: 100px;
+  border-radius: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+/* cell表单样式 */
+.value{
+  display: flex;
+  /* justify-content: center; */
+  font-size: 25rpx;
+}
+
+.container {
+  display: flex;
+}
+
+.label{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*未登录时的样式*/
+.container{
+  display:flex;
+  width: 100%;
+  height: 100%;
+}
+.profile-photo{
+  background:white;
+  margin-top: -60px;
+  width: 25%;
+  line-height: 700%;/*设置行高*/
+  border: 1px solid #E4E6ED;
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.option{
+  display: flex;
+  flex-direction: column;/*子块垂直排列*/
+  align-items: center;/*在块内居中*/
+  margin-top: -40px;
+}
+.item {
+  display: flex;
+  flex-direction: row;/*按行排列*/
+  width: 70%;/*占满整行*/
+  border: 2px solid #E4E6ED;
+  margin: 5px;
+  border-radius: 15px;
+  background-color: #c6e6f5;
+  padding: 5px;
+}
+/*文字样式*/
+.title {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 70%;
+  text-align: center;
+  font-size: 15px;
+}
+/*箭头样式*/
+.detail2 {
+  font-size: 15px;
+  position: absolute;
+  right: 70px;
+  height: 50px;
+  line-height: 50px;
+  color: #888;
+} 
